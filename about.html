@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sasi Domonkos (NS4KMQ)">
+    <meta name="description" content="Az étteremről és a pizzakészítésről információk. Képgaléria.">
+    <link rel="icon" href="images/pizza_icon.png">
+
+    <title>figurati</title>
+
+    <script src="about.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.6.0.js"></script>
+    <script src="galleria-1.6.1/dist/galleria.min.js"></script>
+    <script src="galleria-1.6.1/dist/themes/classic/galleria.classic.min.js"></script>
+</head>
+
+<body>
+    <Header>
+        <nav>
+            <ul class="flex-container">
+                <li><a href="index.html">főoldal</a></li>
+                <li><a href="menu.html">menü</a></li>
+                <li><a href="faq.html">gyik</a></li>
+                <li><a href="#" id="activePage">rólunk</a></li>
+            </ul>
+        </nav>
+        <div id="sitesButton">
+            <div class="csik">
+            </div>
+            <div class="csik">
+            </div>
+        </div>
+    </Header>
+    <div class="flex-container">
+        <div class="start about">
+            <div class="title-background"></div>
+            <div class="flex-container" id="title">
+                <h1>figurati</h1>
+            </div>
+        </div>
+        <aside>
+            <div id="asideButton">
+                <div class="csik">
+                </div>
+                <div class="csik">
+                </div>
+                <div class="csik">
+                </div>
+            </div>
+            <nav>
+                <ul class="flex-container">
+                    <li><a href="#uzletunk">Üzletünk</a></li>
+                    <li><a href="#pizza">Pizzánk</a></li>
+                    <li><a href="#gallery">Képgaléria</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="flex-container">
+            <article id="uzletunk" class="pirosSzurke flex-container">
+                <section class="flex-container">
+                    <div class="szoveg">
+                        <p>Megtalálhat minket a II. kerületi sétálóövezetben, a macskaköves úton. Üzletünket dél-itáliai
+                            stílusba öltöztettük, hogy autentikusabb élény tujdunk nyújtani.</p>
+                    </div>
+                    <div class="kep"><img src="images/fineas-anton-kC1-9Snr9hI-unsplash.jpg" alt="A pizzázó bejárata">
+                    </div>
+                </section>
+                <section class="flex-container">
+                    <div class="kep"><img src="images/marialaura-gionfriddo-II3Vo7MJ9Z0-unsplash.jpg"
+                            alt="Pizzázó előtti székek"></div>
+                    <div class="szoveg">
+                        <p>Tavasszal és nyáron az üzlet előtt is el lehet fogyasztani pizzáinkat. Piros-fehér kockás
+                            terítőink és rusztikus bútoraink elrepítik önöket a dél-itáliai Bariba egy kellemes étkezés
+                            idejére.</p>
+                    </div>
+                </section>
+                <section class="flex-container">
+                    <div class="szoveg">
+                        <p>Pizzáinkat eredeti olasz fatüzelésű kemecében készítjük el, ami a nap folyamán 400 °C-on ég,
+                            hogy Önöknek megfelelő minőségű pizzát tudjunk kínálni.</p>
+                    </div>
+                    <div class="kep"><img src="images/louis-hansel-W75bFvPPrK8-unsplash.jpg" alt="A kemence"></div>
+                </section>
+            </article>
+            <article id="pizza" class="pirosSzurke flex-container">
+                <section class="flex-container">
+                    <div class="kep"><img src="images/artur-rutkowski-4yzEtTQLdL4-unsplash.jpg"
+                            alt="Pizzatészte begyúrva"></div>
+                    <div class="szoveg">
+                        <p>Pizzatésztánkat mindig egy nappal korábban elkészítjük, és gömb alakban hadjuk állni, hogy
+                            másnapra az ízek tökéletesen összeérjenek.</p>
+                    </div>
+                </section>
+                <section class="flex-container">
+                    <div class="szoveg">
+                        <p>Minden pizzát kézzel nyújtunk ki. Így mindegyik egyedi méretű, és alakú lesz.</p>
+                    </div>
+                    <div class="kep"><img src="images/mathias-p-r-reding-mShLuTQiBds-unsplash.jpg" alt="Pizza nyújtása">
+                    </div>
+                </section>
+                <section class="flex-container">
+                    <div class="kep"><img src="images/mockup-graphics-q9BAy-GGEMs-unsplash.jpg"
+                            alt="Félbevágott paradicsom"></div>
+                    <div class="szoveg">
+                        <p>Olaszországban termesztett, eredeti San Marzano paradicsommal emeljük még pizzánk ízvilágát.
+                            Aki próbálta, tudja.</p>
+                    </div>
+                </section>
+                <section class="flex-container">
+                    <div class="szoveg">
+                        <p>A hab a tortán a bivaly mozzarella. Páratlan sajtfajta, ami szintén Olaszországból származik.
+                        </p>
+                    </div>
+                    <div class="kep"><img src="images/laura-novara-Z9H78pwQJMY-unsplash.jpg" alt="Mozzarella golyók">
+                    </div>
+                </section>
+            </article>
+            <article id="gallery">
+                <img src="images/nik-owens-40OJLYVWeeM-unsplash.jpg" alt="Frissen sült pizza"
+                    title="Frissen sült pizza">
+                <img src="images/nadya-spetnitskaya-tOYiQxF9-Ys-unsplash.jpg" alt="Pizza gyúrás" title="Pizza gyúrás">
+                <img src="images/anthony-duran-QbOvrpDU1KA-unsplash.jpg" alt="Pizzák tányéron" title="Reggeli">
+                <img src="images/lucian-alexe-afDu-GuxjjM-unsplash.jpg" alt="Motoros pizzafutár" title="Motoros pizzafutár">
+                <img src="images/dan-burton-oNlMfgwLbWI-unsplash.jpg" alt="Pizzásdobozok" title="Pizzásdobozok">
+            </article>
+        </main>
+        <footer class="flex-container">
+            <p>Nem egy valós étterem. Az oldal tanulmányi célú.</p>
+            <p>Sasi Domonkos © 2022</p>
+        </footer>
+    </div>
+</body>
+
+</html>

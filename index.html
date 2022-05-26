@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sasi Domonkos (NS4KMQ)">
+    <meta name="description" content="Ajánlatok, hírek, és fontos információk.">
+    <link rel="icon" href="images/pizza_icon.png">
+
+    <title>figurati</title>
+
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <Header>
+        <nav>
+            <ul class="flex-container">
+                <li><a href="#" id="activePage">főoldal</a></li>
+                <li><a href="menu.html">menü</a></li>
+                <li><a href="faq.html">gyik</a></li>
+                <li><a href="about.html">rólunk</a></li>
+            </ul>
+        </nav>
+        <div id="sitesButton">
+            <div class="csik">
+            </div>
+            <div class="csik">
+            </div>
+        </div>
+    </Header>
+    <div class="flex-container">
+       
+        <div class="start index">
+            <div class="title-background"></div>
+            <div class="flex-container" id="title">
+                <h1>figurati</h1>
+                <div id="alsoSzoveg">
+                    <div id="jobbBorder">
+                        <p id="szoveg"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <aside>
+            <div id="asideButton">
+                <div class="csik">
+                </div>
+                <div class="csik">
+                </div>
+                <div class="csik">
+                </div>
+            </div>
+            <nav>
+                <ul class="flex-container">
+                    <li><a href="#ajánlatok">Ajánlatok</a></li>
+                    <li><a href="#hírek">Hírek</a></li>
+                    <li><a href="#információk">Info</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="flex-container">
+            <article id="ajánlatok" class="flex-container">
+                <div id="balra"><img src="icons/double-arrow-4853.svg" alt="Balra mutató nyíl"></div>
+                <div id="ajanlatokAblak">
+                    <div id="ajanlatokSlides">
+                        <section class="ajanlat">
+                            <div class="szoveg">
+                                <h3>akciós pizza</h3>
+                                <h4>capricosa, 1990 ft</h4>
+                            </div>
+                            <div class="kep"><img src="images/amirali-mirhashemian-XtLPfib7OuM-unsplash.jpg" alt="Akcios pizza">
+                            </div>
+                        </section>
+                        <section class="ajanlat">
+                            <div class="szoveg">
+                                <h3>páros ajánlat</h3>
+                                <h4>második pizza után ingyen 0,5 literes üdítő</h4>
+                            </div>
+                            <div class="kep"><img src="images/mahyar-motebassem-pGA4zHvpo5E-unsplash.jpg" alt="Pizza és coca cola.">
+                            </div>
+                        </section>
+                        <section class="ajanlat">
+                            <div class="szoveg">
+                                <h3>5% vásárlásodból</h3>
+                                <h4>kuponkód: figurati5</h4>
+                            </div>
+                            <div class="kep"><img src="images/tamas-pap-XLmhRnV8yuc-unsplash.jpg" alt="Pizzaszeletek."></div>
+                        </section>
+                    </div>
+                </div>
+                <div id="jobbra"><img src="icons/double-right-arrow-4851.svg" alt="Jobbra mutató nyíl"></div>
+            </article>
+            <article id="hírek" class="pirosSzurke flex-container">
+                <section class="flex-container">
+                    <div class="szoveg">
+                        <h3>pünkösd hétfőn is nyitva tartunk!</h3>
+                        <p>Júniis 6-án, pünkösd hétfőn is várjuk vendégeinket személyesen és az online térben.
+                            Ünnepeljenek együtt a családdal kedvenc pizzájuk társaságában.</p>
+                    </div>
+                    <div class="kep"><img src="images/klara-kulikova-5eoiyhGLFb4-unsplash.jpg" alt="Pizzaszeletek"></div>
+                </section>
+                <section class="flex-container">
+                    <div class="kep"><img src="images/theme-photos-Klby0nxseY8-unsplash.jpg" alt="Fúró"></div>
+                    <div class="szoveg">
+                        <h3>munkálatok</h3>
+                        <p>Május első hetében munkálatok miatt a személyes kiszolgálás szünetel. Online és a
+                            telefonvonal másik végén továbbra is várjuk rendeléseiket.</p>
+                    </div>
+                </section>
+                <section class="flex-container">
+                    <div class="szoveg">
+                        <h3>elhagyott tárgyak</h3>
+                        <p>Tájékoztatjuk kedves vendégeinket, hogy elhagyott tárgyaikat 1 hónapig megőrizzük
+                            raktárunkban. Nyitvatartási időn belül tulajdonosuk bármikor átveheti. Az idő lejártával
+                            gyermekotthonoknak adjuk tovább a gazdátlan tárgyakat.</p>
+                    </div>
+                    <div class="kep"><img src="images/gleb-makarov-PAPGy3h0KdA-unsplash.jpg" alt="Talált tárgyak"></div>
+                </section>
+                <section class="flex-container">
+                    <div class="kep"><img src="images/jon-tyson-Gp1bS0WTw3w-unsplash.jpg" alt="Pizzázó tábla"></div>
+                    <div class="szoveg">
+                        <h3>nyitás</h3>
+                        <p>Örömmel adjuk hírül, hogy fél év kemény munka után április elején megnyitott az üzletünk
+                            Budapesten, a VI. kerületben. Gyertek be hozzánk, és ismerjétek meg ízeinket!</p>
+                    </div>
+                </section>
+            </article>
+            <article id="információk" class="flex-container">
+                <section id="házhozSzállítás" class="flex-container">
+                    <div class="flex-container">
+                        <div id="budapest"><img src="images/budapest_II.kerulet.png" alt="Budapest, II. kerület"></div>
+                        <h3>házhozszállítás Budapesten</h3>
+                    </div>
+                    <div>
+                        <h4>11-21 között veszünk fel rendeléseket</h4>
+                        <p>Ingyenes házhozszállítás az II. kerületben, akár 30 perc alatt. Budapest többi
+                            kerületében a
+                            szállítás 390 forint, és a kiszállítási idő is nőhet. Budapesten kívülre nem szállítunk.
+                        </p>
+                    </div>
+                </section>
+                <section class="flex-container">
+                    <div class="flex-container">
+                        <div>
+                            <h4>telefonszám:</h4>
+                            <p>5-22-22-22</p>
+                            <h4>helyszín:</h4>
+                            <p>Budapest,<br>II. kerület<br>Vérhalom tér</p>
+                        </div>
+                    </div>
+                    <div>
+                        <iframe id="map" frameborder="2" scrolling="no" marginheight="0" marginwidth="0"
+                            src="https://www.openstreetmap.org/export/embed.html?bbox=19.017162322998047%2C47.51715722229199%2C19.031324386596683%2C47.52382305219054&amp;layer=mapnik&amp;marker=47.52049024310694%2C19.024243354797363"
+                            style="border: 1px solid black">
+                        </iframe>
+                    </div>
+                </section>
+                <section id="nyitvatartás" class="flex-container">
+                    <div>
+                        <h3>Nyitvatartás:</h3>
+                    </div>
+                    <div>
+                        <table>
+                            <tr>
+                                <td>hétfő:</td>
+                                <td rowspan="4">12:00 - 20:00</td>
+                            </tr>
+                            <tr>
+                                <td>kedd:</td>
+                            </tr>
+                            <tr>
+                                <td>szerda:</td>
+                            </tr>
+                            <tr>
+                                <td>csütörtök:</td>
+                            </tr>
+                            <tr>
+                                <td>péntek:</td>
+                                <td rowspan="2">12:00 - 22:00</td>
+                            </tr>
+                            <tr>
+                                <td>szombat:</td>
+                            </tr>
+                            <tr>
+                                <td>vasárnap:</td>
+                                <td>12:00 - 16:00</td>
+                            </tr>
+                        </table>
+                    </div>
+                </section>
+            </article>
+        </main>
+        <footer class="flex-container">
+            <p>Nem egy valós étterem. Az oldal tanulmányi célú.</p>
+            <p>Sasi Domonkos © 2022</p>
+        </footer>
+    </div>
+</body>
+
+</html>

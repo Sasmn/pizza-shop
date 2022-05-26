@@ -1,0 +1,86 @@
+1. Oldal készítője: Sasi Domonkos
+
+2. oldal címe: http://www.uni-corvinus.hu/~ns4kmq
+
+3. Weboldal témája: Egy pizzázó weboldala, ahol meg lehet ismerni a pizzázó főbb híreit, a nyitvatartást, a menüt, a pizzázó helyszínét illetve rövid történelmét. Emellett lehetőség van rendelés leadására. 
+
+4. Mindegyik oldalhoz külön js fájl van csatolva.
+    - mindegyik oldalon szereplő js:
+        - cím hátterének mozgatása egérrel
+            - amikor a cím felé viszi a felhasználó az egeret, akkor bekérjük az egér pozícióját, majd beállítjuk a kép transform tulajdonságát:
+                - a rotateY amikor az egér a kijelző baloldalán van, legyen negatív, amikor a jobboldalán legyen pozitív (a 4500-as osztás a dőlés szögét állítja be, próbálkozással lett beállítva)
+                - a rotateX pedig amikor a kép felső részében van az egér, legyen pozitív, amikor az alsó részében, legyen negatív (az 1500-as osztás itt is ugyanazt a célt szolgálja)
+        - a fentről lejövő navigációs sáv megjelenítése
+            - a header alapból az oldal tetejére van állítva a position absolut tulajdonsággal, de amikor megnyomják akkor fixed lesz, és így a kijelző tetejére kerül
+            - extra itt az x gomb, ami csak fixed esetben jelenik meg, és amivel eltűntethető a header
+        - aside navigáció színezése görgetésre, hogy jelezze melyik article-ön vagyunk
+            - amikor az viewport teteje - 300 pixelre ér az adott article, akkor a hozzá tartozó cím pirosra, és nagyobbra vált
+        - betöltési animáció: az oldal betöltése után lefele görgetve a section-ök kússzanak be alulról
+            - ehhez először mindegyik transform tulajdonságon keresztül le kell küldeni
+            - és amikor a section alulról bekerül a kijelzőbe, akkor a translateY legyen 0, "kússzon be"
+    - főoldalon és rólunk oldalon
+        - a szövegek árnyékának mozgatása az egér hatására
+            - a box-shadow x-része legyen az egér pozíciója - a hír baloldali távolsága a kijelző szélétől - a hir szélességének a fele
+                - így a shadow x mentén való eltolása a hír közepén lesz 0
+            - a box-shadow y-része ugyanezen gondolatmenet mentén a hír közepén lesz 0
+            - az osztó a végén megint azért kell, hogy a shadow eltolásának mértéke be legyen állítva
+    - csak a főoldalon
+        - oldal eleji billentyűzet szerű "animáció"
+            - megadtam 4 szöveget, amiknek mindig egy karakterét hozzáadom a html-ben levő div belsejébe, megadott időközönként
+            - extra: a kurzor szerű villogás: a div jobboldali border-e megadott időközönként el-és megjelenik
+                - miközben kiíródik és törtődik a szöveg, nem villogás
+        - ajánlatok képgaléria váltása
+            - a képek egymás mellé vannak rakva egy divben, és a div left tulajdonságát kell állítgatni
+            - gomblenyomásra, a jelenlegi ajánlat függvényében beállítja a parent div left tulajdonságát
+            - emellett 6 másodpercenként automatikusan is váltódik
+                - extra: amikor le lett nyomva valamelyik gomb, ez a 6 másodperc resetelődik
+    - csak a menü oldalon
+        - a pizza kártyák feltöltése
+            - három tömbben el vannak tárolva a pizzák adatai, ezek lesznek a megfelelő div-ek tartalmai
+        - kosárba rakás
+            - mennyiség beállítása: a + és - gombokra nyomva nő és csökken a mennyiség, ami 1 és 9 között változhat
+                - és ezt eltároljuk egy tömbbe (kosarDB), ami emellett abban is segít, hogy eldönstük melyik pizzák vannak a kosárban
+                - az oldal újratöltésénél a változók törlődnek, de a mennyiség jelzése nem --> újratöltésénél mindegyik értékét 1-re kell állítani
+            - kosárba rakásra az összes létrejön az összes olyan pizzának egy kis kártya, ami bekerült a kosárba (tehát a kosarDB változója nem semmi)
+        - végösszeg kiszámolása
+            - a kosárba került mennyiség és a pizza árának szorzásával (minden kosarba rakás elején nullázni kell, hiszen ilyenkor a kosár összes tartalma újraszámolódik)
+            - KUPON: amennyiben korábban értékesítették a kuponkódot, akkor a végösszegből azt vonja le
+        - üdítő hozzáadása: ha a kosárban több mint 2 termék van (kosarDB-k összege), akkor jelenjen meg az üdítős kártya
+        - kuponkód validálása: ha megfelel, akkor rögtön frissül a végösszeg és a későbbiekben is mindig levonódik
+            - ha nem, akkor kiírja azt hogy nem érvényes
+        - Rendelés form validálása:
+            - validálja a formot
+            - 2 fontosabb rész: 
+                - a telefonszám pattern-jének a megadásához linkelni kellett a html-hez az addtitonal-methods.js-et is
+                - a kettő jelszónak egyeznie kell
+    - csak about oldalon
+        - képgaléria beállítása: ha tablet vagy telefon, akkor a képgaléria magassága legyen kisebb (media query js-ben)
+
+5. Az egész oldalon a Koho-light fonttípus van használva, forrás: https://fonts.google.com/specimen/KoHo?preview.text=%C3%96l%C5%91%20%C3%9Al%C5%B1%20%C3%A1fs%C3%A9sds%C3%AD&preview.text_type=custom
+
+6. A Menü oldalon a kártyáknál a pizza mennyisége: number; a rendelés formjában: email, tel, time, color
+
+7. Egyetlen kódrészlet lett átvéve teljesen: amikor frissül az oldal, ugorjon a tetejére
+    forrás: https://stackoverflow.com/questions/3664381/force-page-scroll-position-to-top-at-page-refresh-in-html
+
+KÉPEK FORRÁSAI:
+
+https://www.iconpacks.net/free-icon/double-arrow-4853.html
+https://www.iconpacks.net/free-icon/double-right-arrow-4851.html
+
+https://www.pngwing.com/en/free-png-dbuce
+https://pngimg.com/image/8905
+
+https://unsplash.com/collections/vJH1qDDaRUg/webfejl_pizza
+
+https://www.pngwing.com/en/free-png-tnybh/download
+https://www.pngwing.com/en/free-png-tigmt
+https://www.pngwing.com/en/free-png-hwhlg
+https://www.pngwing.com/en/free-png-knzys
+https://www.pngwing.com/en/free-png-nravg
+https://www.pngwing.com/en/free-png-dntuf
+https://www.pngwing.com/en/free-png-tcjea
+https://www.pngwing.com/en/free-png-zecll
+https://www.pngwing.com/en/free-png-nraxd
+https://www.pngwing.com/en/free-png-trqfg
+https://www.pngwing.com/en/free-png-hdxqm

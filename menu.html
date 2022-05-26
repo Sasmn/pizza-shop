@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sasi Domonkos (NS4KMQ)">
+    <meta name="description" content="Ajánlatok, rendelhető pizzák, és a kosár.">
+    <link rel="icon" href="images/pizza_icon.png">
+
+    <title>figurati</title>
+
+    <script src="menu.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.6.0.js"></script>
+    <script src="jquery-validation-1.19.3/dist/jquery.validate.min.js"></script>
+    <script src="jquery-validation-1.19.3/dist/additional-methods.js"></script>
+</head>
+
+<body>
+    <Header>
+        <nav>
+            <ul class="flex-container">
+                <li><a href="index.html">főoldal</a></li>
+                <li><a href="#" id="activePage">menü</a></li>
+                <li><a href="faq.html">gyik</a></li>
+                <li><a href="about.html">rólunk</a></li>
+            </ul>
+        </nav>
+        <div id="sitesButton">
+            <div class="csik">
+            </div>
+            <div class="csik">
+            </div>
+        </div>
+    </Header>
+    <div class="flex-container">
+        <div class="start menu">
+            <div class="title-background"></div>
+            <div class="flex-container" id="title">
+                <h1>figurati</h1>
+            </div>
+        </div>
+        <aside>
+            <div id="asideButton">
+                <div class="csik">
+                </div>
+                <div class="csik">
+                </div>
+                <div class="csik">
+                </div>
+            </div>
+            <nav>
+                <ul class="flex-container">
+                    <li><a href="#ajánlatokMenu">Ajánlatok</a></li>
+                    <li><a href="#pizzaMenu">Pizzák</a></li>
+                    <li><a href="#kosar">Kosár</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="menuPage flex-container">
+            <article id="ajánlatokMenu" class="flex-container">
+                <section>
+                    <div class="indexImage">
+                        <img src="images/amirali-mirhashemian-XtLPfib7OuM-unsplash.jpg" alt="Akciós pizza - négy évszak">
+                    </div>
+                    <div class="description">
+                        <h3>akciós pizza: négy évszak</h3>
+                        <h4>paradicsomszósz, sonka, gomba, kukorica, szalámi, mozzarella</h4>
+                        <p class="ár">1790 ft</p>
+                    </div>
+                </section>
+                <section>
+                    <div class="indexImage">
+                        <img src="images/mahyar-motebassem-pGA4zHvpo5E-unsplash.jpg" alt="Pizza és coca cola">
+                    </div>
+                    <div class="description">
+                        <h3>páros ajánlat</h3>
+                        <h4>második pizza után ingyen 0,5 literes üdítő</h4>
+                    </div>
+                </section>
+            </article>
+            <article id="pizzaMenu" class="flex-container">
+                <section>
+                    <div class="indexImage">
+                    </div>
+                    <div class="description">
+                        <h3></h3>
+                        <h4></h4>
+                        <p class="ár"></p>
+                        <div class="kosarForm">
+                            <div><input type="button" value="-" class="minusz"></div>
+                            <div><input type="number" name="db" class="db" value="1" min="1" max="9"></div>
+                            <div><input type="button" value="+" class="plusz"></div>
+
+                            <div><input type="submit" value="Kosárba" class="kosarba"></div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="indexImage">
+                    </div>
+                    <div class="description">
+                        <h3></h3>
+                        <h4></h4>
+                        <p class="ár"></p>
+                        <div class="kosarForm">
+                            <div><input type="button" value="-" class="minusz"></div>
+                            <div><input type="number" name="db" class="db" value="1" min="1" max="9"></div>
+                            <div><input type="button" value="+" class="plusz"></div>
+
+                            <div><input type="submit" value="Kosárba" class="kosarba"></div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="indexImage">
+                    </div>
+                    <div class="description">
+                        <h3></h3>
+                        <h4></h4>
+                        <p class="ár"></p>
+                        <div class="kosarForm">
+                            <div><input type="button" value="-" class="minusz"></div>
+                            <div><input type="number" name="db" class="db" value="1" min="1" max="9"></div>
+                            <div><input type="button" value="+" class="plusz"></div>
+
+                            <div><input type="submit" value="Kosárba" class="kosarba"></div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="indexImage">
+                    </div>
+                    <div class="description">
+                        <h3></h3>
+                        <h4></h4>
+                        <p class="ár"></p>
+                        <div class="kosarForm">
+                            <div><input type="button" value="-" class="minusz"></div>
+                            <div><input type="number" name="db" class="db" value="1" min="1" max="9"></div>
+                            <div><input type="button" value="+" class="plusz"></div>
+
+                            <div><input type="submit" value="Kosárba" class="kosarba"></div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="indexImage">
+                    </div>
+                    <div class="description">
+                        <h3></h3>
+                        <h4></h4>
+                        <p class="ár"></p>
+                        <div class="kosarForm">
+                            <div><input type="button" value="-" class="minusz"></div>
+                            <div><input type="number" name="db" class="db" value="1" min="1" max="9"></div>
+                            <div><input type="button" value="+" class="plusz"></div>
+
+                            <div><input type="submit" value="Kosárba" class="kosarba"></div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="indexImage">
+                    </div>
+                    <div class="description">
+                        <h3></h3>
+                        <h4></h4>
+                        <p class="ár"></p>
+                        <div class="kosarForm">
+                            <div><input type="button" value="-" class="minusz"></div>
+                            <div><input type="number" name="db" class="db" value="1" min="1" max="9"></div>
+                            <div><input type="button" value="+" class="plusz"></div>
+
+                            <div><input type="submit" value="Kosárba" class="kosarba"></div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="indexImage">
+                    </div>
+                    <div class="description">
+                        <h3></h3>
+                        <h4></h4>
+                        <p class="ár"></p>
+                        <div class="kosarForm">
+                            <div><input type="button" value="-" class="minusz"></div>
+                            <div><input type="number" name="db" class="db" value="1" min="1" max="9"></div>
+                            <div><input type="button" value="+" class="plusz"></div>
+
+                            <div><input type="submit" value="Kosárba" class="kosarba"></div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="indexImage">
+                    </div>
+                    <div class="description">
+                        <h3></h3>
+                        <h4></h4>
+                        <p class="ár"></p>
+                        <div class="kosarForm">
+                            <div><input type="button" value="-" class="minusz"></div>
+                            <div><input type="number" name="db" class="db" value="1" min="1" max="9"></div>
+                            <div><input type="button" value="+" class="plusz"></div>
+
+                            <div><input type="submit" value="Kosárba" class="kosarba"></div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="indexImage">
+                    </div>
+                    <div class="description">
+                        <h3></h3>
+                        <h4></h4>
+                        <p class="ár"></p>
+                        <div class="kosarForm">
+                            <div><input type="button" value="-" class="minusz"></div>
+                            <div><input type="number" name="db" class="db" value="1" min="1" max="9"></div>
+                            <div><input type="button" value="+" class="plusz"></div>
+
+                            <div><input type="submit" value="Kosárba" class="kosarba"></div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="indexImage">
+                    </div>
+                    <div class="description">
+                        <h3></h3>
+                        <h4></h4>
+                        <p class="ár"></p>
+                        <div class="kosarForm">
+                            <div><input type="button" value="-" class="minusz"></div>
+                            <div><input type="number" name="db" class="db" value="1" min="1" max="9"></div>
+                            <div><input type="button" value="+" class="plusz"></div>
+
+                            <div><input type="submit" value="Kosárba" class="kosarba"></div>
+                        </div>
+                    </div>
+                </section>
+
+            </article>
+            <article id="kosar" class="flex-container">
+                <div>
+                    <article id="kosarTartalma">
+                        <!-- <section>
+                                <div class="kosarImage">
+                                    <img src="images/pizza1.png" alt="">
+                                </div>
+                                <div class="kosarAdatok">
+                                    <p class="nev">Magyaros</p>
+                                    <p class="dbAr">2 * 1990 ft</p>
+                                </div>
+                            </section> -->
+                    </article>
+                    <article>
+                        <section id="udito">
+                            <p>+ ajándék üdítő</p>
+                            <div><img src="images/coca_cola_PNG8905.png" alt="Palack coca cola"></div>
+                        </section>
+                        <section id="vegosszeg">Vásárlás összege: 0 ft</section>
+                    </article>
+                </div>
+                <section id="rendelesForm">
+                    <form action="http://szamtud.uni-corvinus.hu/~blang/receive.php" method="post" id="myForm">
+                        <fieldset>
+                            <legend>Adatai</legend>
+
+                            <div>
+                                <label for="nev">Név:</label>
+                                <input type="text" name="nev" id="nev">
+                            </div>
+                            <div>
+                                <label for="telefonszam">Telefonszám:</label>
+                                <input type="tel" name="telefonszam" id="telefonszam">
+                            </div>
+                            <div>
+                                <label for="email">E-mail:</label>
+                                <input type="email" name="email" id="email">
+                            </div>
+                            <div>
+                                <label for="jelszo">Jelszó:</label>
+                                <input type="password" name="jelszo" id="jelszo">
+                            </div>
+                            <div>
+                                <label for="jelszo2">Jelszó megint:</label>
+                                <input type="password" name="jelszo2" id="jelszo2">
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Szállítási cím</legend>
+
+                            <p>Város: Budapest</p>
+
+                            <div>
+                                <label for="kerulet" id="keruletLabel">Válasszon kerületet:</label>
+                                <select name="kerulet" id="kerulet">
+                                    <option value="I.">I. kerület</option>
+                                    <option value="II.">II. kerület</option>
+                                    <option value="III.">III. kerület</option>
+                                    <option value="IV.">IV. kerület</option>
+                                    <option value="V.">V. kerület</option>
+                                    <option value="VI.">VI. kerület</option>
+                                    <option value="VII.">VII. kerület</option>
+                                    <option value="VIII.">VIII. kerület</option>
+                                    <option value="IX.">IX. kerület</option>
+                                    <option value="X.">X. kerület</option>
+                                    <option value="XI.">XI. kerület</option>
+                                    <option value="XII.">XII. kerület</option>
+                                    <option value="XIII.">XIII. kerület</option>
+                                    <option value="XIV.">XIV. kerület</option>
+                                    <option value="XV.">XV. kerület</option>
+                                    <option value="XVI.">XVI. kerület</option>
+                                    <option value="XVII.">XVII. kerület</option>
+                                    <option value="XVIII.">XVIII. kerület</option>
+                                    <option value="XIX.">XIX. kerület</option>
+                                    <option value="XX.">XX. kerület</option>
+                                    <option value="XXI.">XXI. kerület</option>
+                                    <option value="XXII.">XXII. kerület</option>
+                                    <option value="XXIII.">XXIII. kerület</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="cim">Utcanév és szám:</label>
+                                <input type="text" name="cim" id="cim">
+                            </div>
+                        </fieldset>
+
+                        <div>
+                            <div>
+                                <label for="ido">Szállítás időpontja:</label>
+                                <input type="time" name="ido" id="ido">
+                            </div>
+                            <div>
+                                <label for="szin">Doboz színe:</label>
+                                <input type="color" name="szin" id="szin">
+                            </div>
+                            <div>
+                                <label for="kupon" id="kuponLabel">Kuponkód:</label>
+                                <input type="text" name="kupon" id="kupon">
+                                
+                                <button type="button" id="kuponGomb">beváltás</button>
+                            </div>
+                            <div>
+                                <label for="megjegyzes">Megjegyzés:</label>
+                                <textarea name="megjegyzes" id="megjegyzes"></textarea>
+                            </div>
+                            <div>
+                        </div>
+                            <input type="submit" value="Rendelés leadása" id="leadasGomb">
+                        </div>
+                    </form>
+                </section>
+            </article>
+        </main>
+        <footer class="flex-container">
+            <p>Nem egy valós étterem. Az oldal tanulmányi célú.</p>
+            <p>Sasi Domonkos © 2022</p>
+        </footer>
+    </div>
+</body>
+
+</html>
